@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:rim="http://www.blackberry.com/ns/widgets"
+        version="1.0.0.5" id="bboa" xml:lang="en">
+  <author href="http://blog.csdn.net/berryreload"
+          rim:copyright="Copyright 1998-2012 My Corp">Yang Jiang</author>
+  <name>BBOA</name>
+  <content src="index.html"/>
+  <feature id="blackberry.identity" required="true" version="1.0.0.0"/>
+
+<rim:permissions>
+ <rim:permit>read_device_identifying_information</rim:permit> 
+
+</rim:permissions>
+</widget>
