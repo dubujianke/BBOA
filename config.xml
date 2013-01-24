@@ -5,11 +5,15 @@
   <author href="http://blog.csdn.net/berryreload"
           rim:copyright="Copyright 1998-2012 My Corp">Yang Jiang</author>
   <name>BBOA</name>
+  <name xml:lang="zh">黑莓移动OA2</name>
+  
   <content src="index.html"/>
   <feature id="blackberry.identity" required="true" version="1.0.0.0"/>
 
 <rim:permissions>
  <rim:permit>read_device_identifying_information</rim:permit> 
+
+<icon rim:hover="false" src="assets\images\appiconread.png"/>
 
 </rim:permissions>
 </widget>
