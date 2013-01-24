@@ -1,0 +1,22 @@
+/*************************************************************/
+/* home page grid style begin *********************************/
+/* center icons */
+.ui-grid-a { text-align: center; }
+.ui-grid-b { text-align: center; }
+		
+/* set row height���� icon-img-home ��ͼƬ�����ϣ� */
+.ui-block-a, .ui-block-b, .ui-block-c { height: 170px; position: relative; }
+
+/* set icon image height ����ͼƬ��С��һ�����������ͳһ���� */
+.icon-img-home { width: 110px;}
+
+/* set icon label size and color */
+.icon-label { color: black; display: block; font-size:28px; }
+.icon-label-disable { color: white; display: block; font-size:28px; }
+
+/* position icons at the bottom of the block to adjust for uneven icon heights */
+.icon-springboard { position: absolute; bottom: 0; width: 100%; }
+
+.content-springboard { height : 660px ; background:url(assets/images/background.png) no-repeat;}
+/* home page grid style end  *********************************/
+/*************************************************************/
