@@ -1,0 +1,63 @@
+
+<html>
+<head>
+     <meta http-equiv="Content-Type" content="text/html;charset=GB2312">
+    
+    <title>RGraph: HTML5 canvas graph library - pie chart</title>
+    
+    <meta name="keywords" content="rgraph html5 canvas example pie chart" />
+    <meta name="description" content="RGraph: Pie chart example" />
+
+    <link rel="stylesheet" href="../css/website.css" type="text/css" media="screen" />
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    
+    <script src="local:///assets/web/js/RGraph.common.core.js" ></script>
+    <script src="local:///assets/web/js/RGraph.common.annotate.js" ></script>
+    <script src="local:///assets/web/js/RGraph.common.context.js" ></script>
+    <script src="local:///assets/web/js/RGraph.common.tooltips.js" ></script>
+    <script src="local:///assets/web/js/RGraph.common.zoom.js" ></script>
+    <script src="local:///assets/web/js/RGraph.common.resizing.js" ></script>
+    <script src="local:///assets/web/js/RGraph.pie.js" ></script>
+   
+    <script>
+        window.onload = function ()
+        {
+           
+
+            var pie2 = new RGraph.Pie('pie2', [2,29,45,17,7]); // Create the pie object
+            pie2.Set('chart.gutter', 45);
+            pie2.Set('chart.title', "客户发展情况");
+            pie2.Set('chart.linewidth', 1);
+            pie2.Set('chart.strokestyle', '#333');
+            pie2.Set('chart.shadow', true);
+            pie2.Set('chart.shadow.blur', 3);
+            pie2.Set('chart.shadow.offsetx', 3);
+            pie2.Set('chart.shadow.offsety', 3);
+            pie2.Set('chart.shadow.color', 'rgba(0,0,0,0.5)');
+            pie2.Set('chart.colors', ['red', 'pink', '#6f6', 'blue', 'yellow']);
+            pie2.Set('chart.contextmenu', [['Clear', function () {RGraph.Clear(pie2.canvas); pie2.Draw();}]]);
+            pie2.Set('chart.key', ['王浩 (2%)', '石天超 (29%)', '刘飞 (45%)', '马建业 (17%)', '方立夫 (7%)']);
+            pie2.Set('chart.key.background', 'white');
+            pie2.Set('chart.key.shadow', true);
+            pie2.Set('chart.annotatable', true);
+            pie2.Set('chart.align', 'left');
+            pie2.Draw();
+        }
+    </script>
+
+</head>
+
+<body >
+
+ 
+
+
+
+    
+    <div style="text-align: center">
+        
+        <canvas id="pie2" width="600" height="450">[No canvas support]</canvas>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+
+<html>
+<head>
+     <meta http-equiv="Content-Type" content="text/html;charset=GB2312">
+    
+    <title>RGraph: HTML5 canvas graph library - line chart</title>
+    
+    <meta name="keywords" content="rgraph html5 canvas example line chart" />
+    <meta name="description" content="RGraph: Line chart example" />
+
+    <link rel="stylesheet" href="../css/website.css" type="text/css" media="screen" />
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+
+    <script src="local:///assets/web/js/RGraph.common.core.js" ></script>
+    <script src="local:///assets/web/js/RGraph.common.annotate.js" ></script>
+    <script src="local:///assets/web/js/RGraph.common.context.js" ></script>
+    <script src="local:///assets/web/js/RGraph.common.tooltips.js" ></script>
+    <script src="local:///assets/web/js/RGraph.common.zoom.js" ></script>
+    <script src="local:///assets/web/js/RGraph.common.resizing.js" ></script>
+    <script src="local:///assets/web/js/RGraph.scatter.js" ></script>
+   
+
+    <script>
+        window.onload = function ()
+        {
+             var scatter9 = new RGraph.Scatter('scatter9',
+                                                          [[25,24], [55,25], [85,27],[115,31], [145,39],[175,39], [205,32],[235,26], [265,25],[295,22], [315,29], [345,39]],
+                                                          [[25,21], [55,22], [85,24],[115,34], [145,35],[175,33], [205,31],[235,22], [265,20],[295,21], [315,28], [345,35]]);
+            scatter9.Set('chart.title', '2010,2009业务完成情况');
+            scatter9.Set('chart.labels', ['Q1', 'Q2', 'Q3', 'Q4']);
+            scatter9.Set('chart.xmax', 365);
+            scatter9.Set('chart.ymax', 50);
+            scatter9.Set('chart.line', true);
+            scatter9.Set('chart.line.stepped', [false, false]);
+            scatter9.Set('chart.line.linewidth', [2,2]);
+            scatter9.Set('chart.line.colors', ['red', 'blue']);
+            scatter9.Set('chart.ticksize', 5);
+            scatter9.Set('chart.key', ['2010', '2009']);
+            scatter9.Set('chart.key.position', 'gutter');
+            scatter9.Set('chart.key.position.y', scatter9.canvas.height - scatter9.Get('chart.gutter') - 20);
+            scatter9.Draw();
+          
+        }
+    </script>
+
+
+</head>
+
+<body>
+
+
+
+         
+        <div style="width: 600px">
+            <div style="width: 450px; float: left">
+                <canvas id="scatter9" width="590" height="440">[No canvas support]</canvas>
+               
+            </div>
+            
+            
+        </div>
+
+    
+
+</body>
+</html>

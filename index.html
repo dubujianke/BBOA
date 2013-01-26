@@ -12,24 +12,37 @@
 </style>
 		<link rel="stylesheet" href="BlackBerry-JQM-all.min.css" />
 		<script src="BlackBerry-JQM-all.min.js"></script>
+
 		<script>
 	        var meta = document.createElement("meta");
 	        meta.setAttribute('name','viewport');
 	        meta.setAttribute('content','initial-scale='+ (1/window.devicePixelRatio) + ',user-scalable=no');
 	        document.getElementsByTagName('head')[0].appendChild(meta);
    		</script>
-		<link rel="stylesheet" href="my.style.blackberry.bb10.css" />  
+		
+   		<!-- for BlackBerry 10 device -->
+		<link rel="stylesheet" href="my.style.blackberry.bb10.css" />
+		<!-- for RGraph -->
+		<script src="assets/web/js/RGraph.common.core.js" ></script>
+    	<script src="assets/web/js/RGraph.common.annotate.js" ></script>
+    	<script src="assets/web/js/libraries/RGraph.common.context.js" ></script>
+	    <script src="assets/web/js/RGraph.common.tooltips.js" ></script>
+    	<script src="assets/web/js/RGraph.common.resizing.js" ></script>
+    	<script src="assets/web/js/RGraph.bar.js" ></script>
+		<script src="BI.js" ></script>
 	</head>
 	<body>
 	
-		<div data-role="page" id="home" >
-	
+		<div data-role="page" id="home">
+			<div data-role="header" data-theme="d">
+				<h1>BB10商务演示应用</h1>
+			</div>
 
-			<div data-role="content" class="content-springboard" >
+			<div data-role="content" class="content-springboard">
 				<div class="ui-grid-b">
 					<div class="ui-block-a">
 					  	<div class="icon-springboard">
-					   		<a href="#mylocation" data-transition="flip">
+					   		<a href="#sample" data-transition="flip">
 						  		<img class="icon-img-home" src="assets\images\001.png">
 						  		<span class="icon-label">流程审批</span>
 					    	</a>
@@ -38,7 +51,7 @@
 					
 					<div class="ui-block-b">
 					   	<div class="icon-springboard">	
-					  		<a href="#mysettings" data-transition="slide">
+					  		<a href="#sample" data-transition="slide">
 								<img class="icon-img-home" src="assets\images\002.png">
 								<span class="icon-label">现场管理</span>
 					  		</a>
@@ -47,7 +60,7 @@
 					
 					<div class="ui-block-c">
 					  	<div style="position: absolute; bottom: 0; width:100%;">
-					  		<a href="#page_barcode" data-transition="slide">
+					  		<a href="#sample" data-transition="slide">
 								<img class="icon-img-home" src="assets\images\005.png">
 								<span class="icon-label">门店巡视</span>
 						  	</a>	
@@ -56,7 +69,7 @@
 					
 					<div class="ui-block-a">
 					  	<div class="icon-springboard">
-					   		<a href="#mylocation" data-transition="flip">
+					   		<a href="#sample" data-transition="flip">
 						  		<img class="icon-img-home" src="assets\images\006.png">
 						  		<span class="icon-label">订单管理</span>
 					    	</a>
@@ -65,7 +78,7 @@
 					
 					<div class="ui-block-b">
 					   	<div class="icon-springboard">	
-					  		<a href="#mysettings" data-transition="slide">
+					  		<a href="#page_bar" data-transition="slide">
 								<img class="icon-img-home" src="assets\images\004.png">
 								<span class="icon-label">商务智能</span>
 					  		</a>
@@ -74,7 +87,7 @@
 					
 					<div class="ui-block-c">
 					  	<div style="position: absolute; bottom: 0; width:100%;">
-					  		<a href="#page_barcode" data-transition="slide">
+					  		<a href="#sample" data-transition="slide">
 								<img class="icon-img-home" src="assets\images\003.png">
 								<span class="icon-label">门店巡视</span>
 						  	</a>	
@@ -83,8 +96,8 @@
 					
 					<div class="ui-block-a">
 					  	<div class="icon-springboard">
-					   		<a href="#mylocation" data-transition="flip">
-						  		<img class="icon-img-home" src="assets\images\006.png">
+					   		<a href="#sample" data-transition="flip">
+						  		<img class="icon-img-home" src="assets\images\010.png">
 						  		<span class="icon-label">软件配置</span>
 					    	</a>
 					  	</div>
@@ -93,8 +106,24 @@
 			</div><!-- /content -->
 		</div><!-- /page -->
 		
-		<div data-role="page">
-			<div data-role="header" data-theme="c">
+		<div data-role="page" id="page_bar">
+			<div data-role="header" data-theme="d">
+				<h1>报表内容</h1>
+			</div><!-- /header -->
+			<div data-role="content">
+        		<div style="width: 450px; float: left">
+            		<canvas id="bar1" width="590" height="440">[No canvas support]</canvas>
+                </div>
+            </div><!-- /content -->
+    		<div data-role="footer" data-position="fixed">
+				<div id="action-bar-area" data-role="actionbar">
+				<div data-role="back"></div>
+			</div><!-- /action bar -->
+		</div>
+		</div><!-- /page -->
+		
+		<div data-role="page" id="sample">
+			<div data-role="header" data-theme="d">
 				<h1>JQM BB10 Test App</h1>
 			</div><!-- /header -->
 			<div data-role="content">
