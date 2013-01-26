@@ -13,10 +13,30 @@ Q: home screen could scroll on BB 10
 Q: Damon 首页阻尼滚动效果  
 
 Q: 缺省的右侧闪出menu 选择/复制链接什么的要去掉
-
+=================================================================================
 Q: footer 返回 ，黑莓样式
  显示英文Back，国际化如何做？ 中文应该显示 上一步
 https://github.com/blackberry/jQueryMobile-BB10-Theme/blob/master/docs/README.md
+
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+		<link rel="stylesheet" href="../dist/latest/BlackBerry-JQM.css" />
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script> 
+		    $(document).bind("mobileinit", function() {
+		        $.mobile.page.prototype.options.backBtnText = "后退";
+		    });
+		</script>
+		<script src="../dist/latest/BlackBerry-JQM-Init.js"></script>
+		<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+		<script src="../dist/latest/BlackBerry-JQM.js" type="text/javascript"></script>
+		<script>
+	        var meta = document.createElement("meta");
+	        meta.setAttribute('name','viewport');
+	        meta.setAttribute('content','initial-scale='+ (1/window.devicePixelRatio) + ',user-scalable=no');
+	        document.getElementsByTagName('head')[0].appendChild(meta);
+   		</script>
+
+
 =================================================================================
 Q: footer 返回 ，黑莓样式
  显示英文 Back

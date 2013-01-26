@@ -4,11 +4,13 @@
         version="1.0.0.5" id="bboa" xml:lang="en">
   <author href="http://blog.csdn.net/berryreload"
           rim:copyright="Copyright 1998-2012 My Corp">Yang Jiang</author>
-  <icon src="assets/images/appiconread.png"/>
+  <icon src="www/assets/images/appiconread.png"/>
   <name>BBOA</name>
   <name xml:lang="zh">黑莓移动OA</name>
   
-  <content src="index.html"/>
+  <access subdomains="true" uri ="*"/>
+  
+  <content src="www/index.html"/>
   <feature id="blackberry.identity" required="true" version="1.0.0.0"/>
 
 <rim:permissions>
