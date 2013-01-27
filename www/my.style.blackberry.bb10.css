@@ -3,16 +3,16 @@
 
 .ui-page
 {
-height : 1250px;	
+	height : 1250px;	
 }
 
 .ui-header
 {
-height : 110px; 	
-background: url(assets/images/top.png) no-repeat;
-background-size:100% 100%;
-text-align: center;
-font-size:42px;
+	height : 110px; 	
+	background: url(assets/images/top.png) no-repeat;
+	background-size:100% 100%;
+	text-align: center;
+	font-size:42px;
 }
 
 /* home page grid style begin *********************************/
@@ -53,4 +53,19 @@ background-size:100% 100%;
   .content-springboard
 */
 /* home page grid style end  *********************************/
+input.ui-input-text
+{
+	width : 690px ;
+}
+
+.ui-li-aside.ui-li-desc {
+  	padding-top:22px;
+	margin-right:80px;
+  	margin-top:0;
+  	max-width:45%;
+  	width:auto;
+  	
+  	color:grep;
+  	font-size:30px;
+}
 /*************************************************************/

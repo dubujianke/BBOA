@@ -47,6 +47,7 @@ Q: footer 返回 ，黑莓样式
 		</div>
 =================================================================================
 Q: JQM Graph支持
+charts API参考：http://www.rgraph.net/docs/charts-index.html
 JQM 页面注意<canvas id="bar1"
 		<script src="assets/web/js/RGraph.common.core.js" ></script>
     	<script src="assets/web/js/RGraph.common.annotate.js" ></script>

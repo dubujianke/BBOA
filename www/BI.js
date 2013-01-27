@@ -4,6 +4,7 @@ function drawBar (){
 	var context = canvas.getContext('2d');
 	
 	var bar2 = new RGraph.Bar('bar1', [140, 150, 160, 150, 120, 150, 160, 140, 120, 160]);
+	
     bar2.Set('chart.background.barcolor1', 'white');
     bar2.Set('chart.background.barcolor2', 'white');
     bar2.Set('chart.title', '二季度销售情况');
@@ -18,7 +19,7 @@ function drawBar (){
     bar2.Set('chart.shadow.offsety', 0);
     bar2.Set('chart.colors', ['#FF6060']);
     bar2.Set('chart.key.position', 'gutter');
-    bar2.Set('chart.text.size', 10);
+    bar2.Set('chart.text.size', 20);
     bar2.Set('chart.text.font', 'Georgia');
     bar2.Set('chart.text.angle', 45);
     bar2.Set('chart.grouping', 'stacked');
@@ -31,7 +32,7 @@ function drawBar (){
     bar2.Draw();
 }
 
-$('#page_bar').live('pageshow', function () {
+$('#page_BIDetail_bar').live('pageshow', function () {
 	var canvas = document.getElementById('bar1');
 	if (canvas.getContext){
 		drawBar();

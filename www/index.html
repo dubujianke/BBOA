@@ -80,7 +80,7 @@
 					
 					<div class="ui-block-b">
 					   	<div class="icon-springboard">	
-					  		<a href="#page_bar" data-transition="slide">
+					  		<a href="#page_BIList" data-transition="slide">
 								<img class="icon-img-home" src="assets\images\004.png">
 								<span class="icon-label">商务智能</span>
 					  		</a>
@@ -108,13 +108,72 @@
 			</div><!-- /content -->
 		</div><!-- /page -->
 		
-		<div data-role="page" id="page_bar">
+		<div data-role="page" id="page_BIList">
+			<div data-role="header" data-theme="d">
+				<h1>商业智能</h1>
+			</div><!-- /header -->
+			<div data-role="content" class="content-springboard">
+	        	<ul data-role="listview">
+					<li>
+						<a href="#page_BIDetail_bar">
+							<img src="assets/images/chart.png" />
+							<h1 class="ui-li-heading">张建</h1>
+							<p>二季度销售报告</p>
+							<p class="ui-li-aside ui-li-desc">2012 0809 14:22:01</p>
+						</a>
+					</li>
+					<li>
+						<a href="#page_BIDetail_bar">
+							<img src="assets/images/chart.png" />
+							<h1 class="ui-li-heading">张建</h1>
+							<p>二季度销售报告</p>
+							<p class="ui-li-aside ui-li-desc">2012 0809 14:22:01</p>
+						</a>
+					</li>
+					<li>
+						<a href="#page_BIDetail_bar">
+							<img src="assets/images/chart.png" />
+							<h1 class="ui-li-heading">张建</h1>
+							<p>二季度销售报告</p>
+							<p class="ui-li-aside ui-li-desc">2012 0809 14:22:01</p>
+						</a>
+					</li>
+					<li>
+						<a href="#page_BIDetail_bar">
+							<img src="assets/images/chart.png" />
+							<h1 class="ui-li-heading">张建</h1>
+							<p>二季度销售报告</p>
+							<p class="ui-li-aside ui-li-desc">2012 0809 14:22:01</p>
+						</a>
+					</li>
+					<li>
+						<a href="#page_BIDetail_bar">
+							<img src="assets/images/chart.png" />
+							<h1 class="ui-li-heading">张建</h1>
+							<p>二季度销售报告</p>
+							<p class="ui-li-aside ui-li-desc">2012 0809 14:22:01</p>
+						</a>
+					</li>
+				</ul>
+			</div><!-- / -->
+    		<div data-role="footer" data-position="fixed">
+				<div id="action-bar-area" data-role="actionbar">
+					<div data-role="back"></div>
+				</div><!-- /action bar -->
+			</div>
+		</div><!-- /page -->
+
+		<div data-role="page" id="page_BIDetail_bar">
 			<div data-role="header" data-theme="d">
 				<h1>报表内容</h1>
 			</div><!-- /header -->
-			<div data-role="content">
-        		<div style="width: 450px; float: left">
-            		<canvas id="bar1" width="590" height="440">[No canvas support]</canvas>
+			<div data-role="content" class="content-springboard">
+				<input type="text" name="report_name" value="二季度销售报告" />
+				<input type="text" name="report_author" value="张健" />
+				<input type="text" name="report_date" value="2012 08 09 14:00"  />
+				
+        		<div style="width: 100%; float: left">
+            		<canvas id="bar1" width="720" height="600">[No canvas support]</canvas>
                 </div>
             </div><!-- /content -->
     		<div data-role="footer" data-position="fixed">
