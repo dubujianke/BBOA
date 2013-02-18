@@ -1,6 +1,14 @@
-Q: 列表
-Q: 列表滚动
-Q:support both BB10, iPad, iTouch, Android
+Q: package with phonegap for iPad
+	PhoneGap
+	Heroku
+	Github
+	 
+
+Q:列表过滤
+
+Q: debug JQM script
+
+Q: input text hint, 右边的清除提示按钮
 
 Q: 九宫格 触摸图标的反应
    m.google.com的栏目touch/hover后，会有个按下去的效果 - 文字变色
@@ -12,8 +20,47 @@ Q: home screen could scroll on BB 10
 
 Q: Damon 首页阻尼滚动效果  
 
+ 
 Q: 缺省的右侧闪出menu 选择/复制链接什么的要去掉
 =================================================================================
+Q: package JQM 1.7 offline css/js/images with app
+  只有jquery.mobile-1.1.1.min.css jquery.mobile-1.1.1.min.js jquery-1.7.1.min.js 三个文件是不够的。
+ 少jqm images目录和下面的两个ajax四个icons图像文件。
+=================================================================================
+Q:support both BB10, iPad, iTouch, Android
+  javascrip query navigator.userAgent 
+	iPad 1: Mozilla/5.0(iPad;
+	BB 10 Alpha: Mozilla/5.0(BB10; Touch)
+=================================================================================
+Q: 列表
+jason数据填充
+参考1：
+例子代码：http://www.w3school.com.cn/jquery/ajax_getjson.asp
+例子数据：http://api.flickr.com/services/feeds/photos_public.gne?tags=cat&tagmode=any&format=json&jsoncallback=?
+ 注意：template里面要增加一个<div>，否则显示格式不对。
+参考2：
+英文版本pdf Pro JQuery Mobile
+CHAPTER 9: Service Integration Strategies 207
+ 
+=================================================================================
+Q: load json数据
+function test() {
+	var url = "local:///www/assets/oa/OASampleData.json";
+	//var url = "assets/oa/OASampleData.json";
+	$.getJSON(url, function(json) {
+		alert(json);
+   		console.log(json); 
+ });
+}
+=================================================================================
+
+Q: 列表滚动
+TODO
+=================================================================================
+Q: 列表
+JQM is good
+=================================================================================
+
 Q: footer 返回 ，黑莓样式
  显示英文Back，国际化如何做？ 中文应该显示 上一步
 https://github.com/blackberry/jQueryMobile-BB10-Theme/blob/master/docs/README.md

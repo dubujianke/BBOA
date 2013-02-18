@@ -1,0 +1,76 @@
+/*************************************************************/
+/* home page title style begin *********************************/
+
+.ui-page
+{
+	//height : 1250px;	
+}
+
+.ui-header
+{
+	height : 110px; 	
+	background: url(assets/images/top.png) no-repeat;
+	background-size:100% 100%;
+	text-align: center;
+	font-size:42px;
+}
+
+/* home page grid style begin *********************************/
+/* center icons */
+.ui-grid-a { 
+	text-align: center; 
+	}
+.ui-grid-b {
+	text-align: center; 
+	}
+		
+/* set row height icon-img-home */
+.ui-block-a, .ui-block-b, .ui-block-c {
+	height: 280px;
+	position: relative;
+ }
+
+/* set icon image height */
+.icon-img-home { width: 170px;}
+
+/* set icon label size and color */
+.icon-label { color: black; display: block; font-size:42px; }
+.icon-label-disable { color: white; display: block; font-size:42px; }
+
+/* position icons at the bottom of the block to adjust for uneven icon heights */
+.icon-springboard { position: absolute; bottom: 0; width: 100%; }
+
+.content-springboard 
+{
+//height : 1140px ; 	/* 1140px is exactly */
+background:url(assets/images/background.png) no-repeat;
+background-size:100% 100%;
+}
+
+/* heights
+.ui-page
+  .ui-header
+  .content-springboard
+*/
+/* home page grid style end  *********************************/
+input.ui-input-text
+{
+//	width : 690px ;
+}
+
+.ui-li-aside.ui-li-desc {
+  	padding-top:22px;
+	margin-right:80px;
+  	margin-top:0;
+  	max-width:45%;
+  	width:auto;
+  	
+  	color:grep;
+  	font-size:30px;
+}
+
+.ui-li .ui-li-desc {
+  	color:black;
+  	font-size:30px;
+}
+/*************************************************************/

@@ -68,4 +68,9 @@ input.ui-input-text
   	color:grep;
   	font-size:30px;
 }
+
+.ui-li .ui-li-desc {
+  	color:black;
+  	font-size:30px;
+}
 /*************************************************************/

@@ -1,0 +1,8 @@
+[
+{"id":"001","CustomerName":"王天琦","EMail":"wangtianqi@tdcom.com","Gender":"1","image":"asset:///images/user.png","Phone":"1334467890","CompanyName":"布棱信息有限公司","Address":"滨海市 云湖路 162 号"},
+{"id":"002","CustomerName":"江红","EMail":"jianghong@ydcom.com","Gender":"2","image":"asset:///images/user.png","Phone":"1334998740","CompanyName":"海辉有限公司","Address":"海口市 天涯路 30 号"},
+{"id":"003","CustomerName":"邓科","EMail":"dengke@abcom.com","Gender":"1","image":"asset:///images/he_user.png","Phone":"1334467890","CompanyName":"讯科","Address":"深圳市 上步路 62 号"},
+{"id":"004","CustomerName":"刘勇","EMail":"liuyong@ysscom.com","Gender":"0","image":"asset:///images/users.png","Phone":"1339908890","CompanyName":"天火有限公司","Address":"深圳市 滨海路 12 号"}
+]		
+		
+		
